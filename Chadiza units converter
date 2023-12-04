@@ -1,0 +1,30 @@
+def cm_to_m(cm):
+    return cm / 100
+
+def kg_to_g(kg):
+    return kg * 1000
+
+# You can add more conversion functions for other units
+
+def main():
+    print("Unit Conversion Application")
+    print("1. Centimeters to Meters")
+    print("2. Kilograms to Grams")
+
+    choice = input("Enter your choice (1 or 2): ")
+
+    if choice == "1":
+        cm_value = float(input("Enter value in centimeters: "))
+        result = cm_to_m(cm_value)
+        print(f"{cm_value} cm is equal to {result} m")
+
+    elif choice == "2":
+        kg_value = float(input("Enter value in kilograms: "))
+        result = kg_to_g(kg_value)
+        print(f"{kg_value} kg is equal to {result} g")
+
+    else:
+        print("Invalid choice. Please enter 1 or 2.")
+
+if __name__ == "__main__":
+    main()
